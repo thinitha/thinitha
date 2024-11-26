@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KNITTING AS A HOBBY</title>
+
+    <style>
+      body {
+        background: rgb(152, 202, 16);
+      }
+    
+      h1 {   
+        text-align: center;
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
+
+      }
+    
+      h2 {
+        text-align: center;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 0%;
+      }
+    
+      img {
+        max-width: 100%;
+        text-align: center;
+      }
+    
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px rgb(111, 216, 26);
+        background: white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+      }
+    
+      button:hover {
+        background: rgb(72, 204, 20);
+        cursor: pointer;
+      }
+    
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+    
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: rgb(2, 37, 24);
+        padding: 3px 4px;
+      }
+    
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      p {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+      }
+
+      .knitting-the-photo {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+
+      }
+
+      .knitting-the-photo:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+
+        .dark {
+        background: linear-gradient(
+          112.1deg,
+          rgb(7, 59, 2) 11.4%,
+          rgb(20, 179, 86) 70.2%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(15, 241, 7, 0.1);
+      }
+
+      .dark a {
+        color: green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button>Dark theme</button>
+    <h1>KNITTING</h1>
+    <h2>MY FAVORITE HOBBY</h2>
+
+    <a href=https://en.wikipedia.org/wiki/Knitting target="_blank">
+    </a>
+
+      <img src="https://tse1.mm.bing.net/th?id=OIP.fzdVoYNxCBw8GM-eNvKI5gHaEJ&pid=Api&P=0&h=220" alt=""
+      class="knitting-the-photo"
+      >
+  </a>
+<div class="grid">
+
+      <img
+        src=https://tse1.mm.bing.net/th?id=OIP.BwLBIqnvnqM_fzp-AZgFCwHaFH&pid=Api&P=0&h=220
+        alt=""
+      />
+
+    <img
+     https://tse1.mm.bing.net/th?id=OIP.Lx-7LY5RuTzIytpUuE4nkQHaDk&pid=Api&P=0&h=220 alt=""
+    />
+    <img
+      src= "https://tse4.mm.bing.net/th?id=OIP.HiqcEhT_6-u9R1xZ7RNAIgHaGV&pid=Api&P=0&h=220" alt=""
+    />
+    <img
+      src="https://tse3.mm.bing.net/th?id=OIP.Bkh887gyJ6kAbnIWadfejwHaEK&pid=Api&P=0&h=220" alt=""
+    />
+    <p>
+Knitting is a method for production of textile fabrics by interlacing yarn loops with loops of the same or other yarns.
+It is used to create many types of garments. Knitting may be done by hand or by machine.
+
+Knitting creates stitches: loops of yarn in a row; they can be either on straight flat needles or in the round on
+needles with (often times plastic) tubes connected to both ends of the needles.
+    </p>
+
+    <br>     
+
+    
+    <a href="https://en.wikipedia.org/wiki/Knitting">
+      <strong> Read on Wikipedia </strong>
+    </a>
+
+    <button>LEARN HOW TO KNIT NOW!</button>
+        Coded by
+        <a href="https://www.shecodes.io/" target="_blank">Thinitha Mapiki</a>
+    </footer>
+
+    <script>
+      function changeTheme() {
+        const body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+
+      const themeButton = document.querySelector(".theme-button");
+      if (themeButton) {
+        themeButton.addEventListener("click", changeTheme);
+      }
+    </script>
+    
+    </body>
+    </html>
